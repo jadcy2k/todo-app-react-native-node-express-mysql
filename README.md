@@ -45,7 +45,22 @@ Creamos el backend en `server/`
 
 ### SERVER/APP.JS:
 
-1) En el archivo `server/app.js` vamos a crar el Server Express:
+https://youtu.be/YJ_XsBDc8mQ?t=2927
+
+1) En el archivo `server/app.js` vamos a crar el Server Express.
+   Esto sigue la estructura típica mostrada en https://expressjs.com/en/starter/hello-world.html
+2) En este punto, podemos hacer un simple test: 
+   $ node app.js  (o `npm run dev` o `yarn dev` )
+   http://localhost:8080/todos/2  ==> Obtendremos los "ToDos" del usuario ID=2.
+
+3) En este archivo usamos el middleware `cors` para el cual hemos creado un objeto `corsOptions`. Básicamente le indicamos de quién queremos recibir peticiones (por seguridad).
+   Lo podremos activar mediante el método `use()` ==> `app.use(cors(corsOptions));`
+
+
+## FRONTEND
+
+https://youtu.be/YJ_XsBDc8mQ?t=3608
+
 
 
 
